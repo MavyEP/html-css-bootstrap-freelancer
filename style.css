@@ -1,0 +1,57 @@
+
+.jumbotron img{
+    width: 150px;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: rgb(102, 186, 158);
+}
+
+.jumbotron hr{
+    border: 1px solid white;
+    margin:  0px;
+}
+
+.container2::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+[class*="col-"] {
+    height: 25px;
+}
+
+.hr {
+   padding-top: 12px;
+}
+
+.navbar {
+    margin-bottom: 0;
+    background-color: rgb(49, 62, 79);
+    border: 0;
+    border-radius: 0;
+}
+
+.container {
+    color: white;
+}
+
+.container .navbar-header a{
+    color: white;
+}
+
+.container .collapse ul li a{
+    color: white;
+}
+
+.navbar-default .navbar-toggle .icon-bar{
+    background-color: white;
+}
+
+@media screen and (max-width:1000px) {
+    [class*="col-"] {
+        display: none;
+    }
+}
