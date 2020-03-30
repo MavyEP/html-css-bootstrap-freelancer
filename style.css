@@ -8,24 +8,6 @@
     background-color: rgb(102, 186, 158);
 }
 
-.jumbotron hr{
-    border: 1px solid white;
-    margin:  0px;
-}
-
-.container2::after{
-    content: "";
-    display: table;
-    clear: both;
-}
-
-[class*="col-"] {
-    height: 25px;
-}
-
-.hr {
-   padding-top: 12px;
-}
 
 .navbar {
     margin-bottom: 0;
@@ -57,6 +39,111 @@
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
     color: white;
 }
+
+.stella{
+    width: 250px;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.stella::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: calc((100% - 60px) / 2);
+    height: 3px;
+    background-color: white;
+}
+
+.stella::before{
+    left: 0;
+}
+
+.stella::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: calc((100% - 60px) / 2);
+    height: 3px;
+    background-color: white;
+}
+
+.stella::after{
+    right: 0;
+}
+
+.stella i {
+    font-size: 20px;
+}
+
+.h1 {
+    color: rgb(49, 62, 79);
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.black {
+    color: rgb(49, 62, 79);
+}
+
+.black::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: calc((100% - 60px) / 2);
+    height: 3px;
+    background-color: rgb(49, 62, 79);
+}
+.black::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: calc((100% - 60px) / 2);
+    height: 3px;
+    background-color: rgb(49, 62, 79);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width:1000px) {
     [class*="col-"] {
