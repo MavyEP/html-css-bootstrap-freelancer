@@ -41,7 +41,8 @@
 }
 
 .stella{
-    width: 250px;
+    text-align: center;
+    max-width: 300px;
     position: relative;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -79,11 +80,17 @@
     font-size: 20px;
 }
 
-.h1 {
-    color: rgb(49, 62, 79);
+section {
     text-align: center;
+}
+
+.h1 {
     font-size: 50px;
     font-weight: bold;
+}
+
+.nero{
+    color: rgb(49, 62, 79);
 }
 
 .black {
@@ -109,44 +116,103 @@
     background-color: rgb(49, 62, 79);
 }
 
+section .container div img {
+    max-width: 100%;
+}
 
+.imgcontainer::after{
+    content: "";
+    display: table;
+    clear: both;
+}
 
+.imgcontainer {
+    margin-top: 20px;
+}
 
+.prima , .seconda{
+    padding-bottom: 100px;
+}
 
+.seconda {
+    background-color:  rgb(102, 186, 158);
+}
 
+.textcontainer::after{
+    content: "";
+    display: table;
+    clear: both;
+}
 
+.textcontainer p {
+    font-size: 20px;
+    text-align: left;
+    padding-bottom: 50px;
+}
 
+.inputcontainer::after  {
+    content: "";
+    display: table;
+    clear: both;
+}
 
+.inputcontainer {
+    padding: 30px 0 ;
+    border-bottom: 1px solid rgb(233, 236, 239);
+}
 
+.inputcontainer input::placeholder {
+    color: rgb(108, 117, 133);
+}
 
+.lineheigth {
+    min-height: 250px;
+}
 
+.seconda .container a {
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 18px;
+    font-size: 22px;
+}
 
+.form-control {
+    border: 0;
+    box-shadow: none;
+    font-size: 25px;
+}
 
+.form-control:focus{
+    outline: none;
+    border: 0;
+    box-shadow: none;
+}
 
+.inputdiv::after{
+    content: "";
+    display: table;
+    clear: both;
+}
 
+.col-xs-8 a {
+    left: 0;
+}
 
+#inputlink {
+    text-align: left;
+    padding-top: 70px;
+}
 
+#inputlink a{
+    font-size: 25px;
+    color: white;
+    border: 25px solid rgb(102, 186, 158);
+    background-color: rgb(102, 186, 158);
+    border-radius: 10px;
+    padding: 0 10px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width:1000px) {
-    [class*="col-"] {
-        display: none;
-    }
+.terza {
+    padding-bottom: 100px;
 }
